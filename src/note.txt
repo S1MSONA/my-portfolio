@@ -4,3 +4,5 @@ light mode : bg-[#e8e8e8]
 bg-[radial-gradient(#ffffff33_1px,#00091d_1px)]
 
 https://github.com/S1MSONA/my-portfolio.git
+
+url file D:\Information Technology\reanmore courses\Reactjs\Practice\my portfolio

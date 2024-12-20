@@ -4,7 +4,7 @@ import img12 from "../assets/img/img12.png";
 const Hero = () => {
   return (
     <main className="flex flex-col md:flex-row justify-between items-center dark:bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] dark:text-[#e8e8e8] transition-all duration-300 xl:px-28 z-0">
-      <div className="pt-[2rem] sm:pt-[4rem] pb-8 flex flex-col gap-2 w-full px-8 sm:px-12 md:px-12">
+      <div className="pt-[2rem] sm:pt-[4rem] pb-8 flex flex-col gap-2 w-full md:w-1/2 px-8 sm:px-12 md:px-1 md:ml-20 xl:ml-12">
         <p className="text-xl">Welcome to my portfolio</p>
         <h1 className="uppercase text-3xl font-semibold bg-gradient-to-r from-blue-600 to-pink-500 text-transparent bg-clip-text">
           Hello, i'm Sona
@@ -40,9 +40,9 @@ const Hero = () => {
           Let's Start!
         </a>
       </div>
-      <div className=" md:w-1/2 flex justify-center items-center relative pb-24 md:mr-24 xl:mr-16 lg:w-1/2 px-8">
+      <div className=" md:w-1/2 flex justify-center items-center relative pb-24 md:mr-16 xl:-mr-1 xl:px-16 px-8">
         <img
-          className="rounded-3xl shadow-custom shadow-blue-300 h-[450px] md:h-[300px] lg:h-[450px] mt-24"
+          className="rounded-3xl shadow-custom shadow-blue-300 h-[450px] md:h-[400px] md:w-full lg:h-[500px] mt-24"
           src={img12}
           alt=""
         />

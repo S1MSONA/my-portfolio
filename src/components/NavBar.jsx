@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import DarkMode from "./DarkMode";
 import profile from "../assets/img/profile_pic.jpg";
+import logo from "../assets/img/logo.png";
 const lists = [
   {
     label: "Home",
@@ -27,9 +28,9 @@ const NavBar = () => {
   return (
     <nav className="dark:bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] dark:text-[#e8e8e8] transition-all duration-300 z-20 sticky top-0">
       <div className="flex justify-between items-center px-8 sm:px-14 md:px-20 xl:px-40 py-6">
-        <h2 className="ml-1 uppercase font-sans text-2xl font-bold bg-gradient-to-tr from-blue-500 to-green-600 text-transparent bg-clip-text">
+        <a className="ml-1 uppercase font-sans text-2xl font-bold bg-gradient-to-tr from-blue-500 to-green-600 text-transparent bg-clip-text">
           Sona
-        </h2>
+        </a>
         <ul className="md:flex gap-4 md:gap-8 xl:gap-16 uppercase font-semibold hidden">
           {lists.map((list) => (
             <li key={list.label}>
@@ -41,9 +42,6 @@ const NavBar = () => {
           <span className="hidden md:flex gap-2 font-semibold">
             <button className="bg-blue-600 text-slate-300 px-3 py-1 rounded-md transition-all duration-200 hover:bg-blue-500 hover:text-white hover:scale-110">
               Sing In
-            </button>
-            <button className="bg-blue-600 text-slate-300 px-3 py-1 rounded-md transition-all duration-200 hover:bg-blue-500 hover:text-white hover:scale-110">
-              Log In
             </button>
           </span>
           <button className="transition-all duration-200">

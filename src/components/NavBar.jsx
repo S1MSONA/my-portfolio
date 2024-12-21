@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import DarkMode from "./DarkMode";
 import profile from "../assets/img/profile_pic.jpg";
-import logo from "../assets/img/logo.png";
+
 const lists = [
   {
     label: "Home",
@@ -33,8 +33,11 @@ const NavBar = () => {
         </a>
         <ul className="md:flex gap-4 md:gap-8 xl:gap-16 uppercase font-semibold hidden">
           {lists.map((list) => (
-            <li key={list.label}>
-              <Link to={list.path}>{list.label}</Link>
+            <li key={list.label} className="relative group">
+              <Link to={list.path} className="transition-all duration-200">
+                {list.label}
+              </Link>
+              <span className="absolute left-0 bottom-0 top-6 w-0 h-[3px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
             </li>
           ))}
         </ul>

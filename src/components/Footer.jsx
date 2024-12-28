@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="dark:bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] dark:text-white transition-all duration-300 bg-gray-300 py-10">
-      <div className="container mx-auto px-4">
+    <footer className="dark:bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] dark:text-white transition-all duration-300 bg-gray-300 py-10 z-0 px-8 sm:px-14 md:px-20 xl:px-40">
+      <div className="">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-semibold mb-4">About Us</h3>
@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
-            <ul className="flex space-x-4">
+            <ul className="flex gap-4">
               <li>
                 <a href="#" className="hover:text-gray-400">
                   Facebook
@@ -57,7 +57,8 @@ const Footer = () => {
         </div>
         <div className="text-center mt-8">
           <p>
-            &copy; {new Date().getFullYear()} Your Company. All rights reserved.
+            &copy; {new Date().getFullYear()} simsona724@gmail.com. All rights
+            reserved.
           </p>
         </div>
       </div>

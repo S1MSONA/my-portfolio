@@ -47,11 +47,11 @@ const lists = [
 ];
 const Project = () => {
   return (
-    <main className="dark:bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] mx-auto pb-12 px-40 transition-all duration-300">
-      <h2 className="dark:text-white text-2xl font-bold text-center mb-12">
+    <main className="dark:bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] mx-auto pb-12 px-8 md:px-20 xl:px-40 transition-all duration-300">
+      <h2 className="dark:text-white text-2xl font-bold text-center mb-12 pt-9 group">
         Our Projects
       </h2>
-      <article className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <article className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {lists.map(({ img, title, description }, index) => (
           <motion.div
             key={index}

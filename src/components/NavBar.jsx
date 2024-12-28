@@ -26,8 +26,8 @@ const lists = [
 const NavBar = () => {
   const [isToggle, setIsToggle] = useState(false);
   return (
-    <nav className="dark:bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] dark:text-[#e8e8e8] transition-all duration-300 z-20 sticky top-0">
-      <div className="flex justify-between items-center px-8 sm:px-14 md:px-20 xl:px-40 py-6">
+    <nav className="dark:bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] dark:text-[#e8e8e8] transition-all duration-300 z-20 sticky top-0 px-8 sm:px-14 md:px-20 xl:px-40">
+      <div className="flex justify-between items-center py-6">
         <a className="ml-1 uppercase font-sans text-2xl font-bold bg-gradient-to-tr from-blue-500 to-green-600 text-transparent bg-clip-text">
           Sona
         </a>
